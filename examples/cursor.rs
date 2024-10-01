@@ -1,4 +1,4 @@
-use chic::Error;
+use chic_blue::Error;
 use std::io::Cursor;
 
 fn main() {

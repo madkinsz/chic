@@ -1,4 +1,4 @@
-use chic::Error;
+use chic_blue::Error;
 
 fn main() {
     let src = r#"This is an example

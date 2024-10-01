@@ -3,7 +3,7 @@
 //! # Examples
 //!
 //! ```
-//! use chic::Error;
+//! use chic_blue::Error;
 //!
 //! let src = r#"This is an example
 //! content of the slice
@@ -34,7 +34,7 @@
 //!
 //! ```
 //! use std::io::Cursor;
-//! use chic::Error;
+//! use chic_blue::Error;
 //!
 //! let cursor = Cursor::new(
 //!     r#"This is an example
