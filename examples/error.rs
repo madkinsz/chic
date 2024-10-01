@@ -10,7 +10,7 @@ with the list of annotations below.
     let msg = Error::new("expected type, found `x`")
         .error(260, 0, 12, src, "found `x`")
         .help("try using a foobs intead")
-        .to_string();
+        .into_string();
 
     println!("{}", msg);
 }

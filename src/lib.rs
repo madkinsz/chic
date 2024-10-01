@@ -14,7 +14,7 @@
 //! let msg = Error::new("expected type, found `x`")
 //!     .error(260, 0, 12, src, "found `x`")
 //!     .help("try using a foobs intead")
-//!     .to_string();
+//!     .into_string();
 //!
 //! println!("{}", msg);
 //! ```
@@ -52,7 +52,7 @@
 //! let msg = Error::new("expected type, found `x`")
 //!     .error(line, start, end, code, "found `x`")
 //!     .help("try using a foobs instead")
-//!     .to_string();
+//!     .into_string();
 //!
 //! println!("{}", msg);
 //! ```

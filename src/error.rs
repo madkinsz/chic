@@ -36,12 +36,12 @@ impl<'a> Error<'a> {
         label: &'a str,
     ) -> Self {
         self.snippet.slices.push(Slice {
-            source: source,
+            source,
             line_start,
             origin: None,
             fold: false,
             annotations: vec![SourceAnnotation {
-                label: label,
+                label,
                 annotation_type: AnnotationType::Error,
                 range: (start, end),
             }],
@@ -59,7 +59,7 @@ impl<'a> Error<'a> {
         self
     }
 
-    pub fn to_string(self) -> String {
+    pub fn into_string(self) -> String {
         DisplayList::from(self.snippet).to_string()
     }
 }
